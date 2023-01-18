@@ -1,0 +1,31 @@
+{
+  "name": "erase-eltax-character",
+  "short_name": "erase-eltax-character",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "eLTAXの「検索」のキャラクターを非表示にするchrome拡張機能",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_icon": "icons/48.png",
+    "default_title": "妖精消します",
+    "default_popup": "html/action.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.eltax.lta.go.jp/**"
+      ],
+      "js": [
+        "js/index.js"
+      ]
+    }
+  ],
+  "background": {}
+}
