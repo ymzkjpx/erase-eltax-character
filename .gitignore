@@ -1,0 +1,35 @@
+# For local
+temp
+
+# For mac
+.DS_Store
+
+# For windows
+Thumbs.db
+
+# Log
+.log
+
+# For Gradle
+build
+.gradle
+
+# IntelliJ IDEA
+.idea/*
+.idea/**
+*.iml
+*.iws
+*.iml
+*.ipr
+out
+.metadata
+
+# node_modules
+node_modules
+dist/
+
+# Bundle Analyzer
+admin/stats.html
+
+# VS Code
+.vscode/
